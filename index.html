@@ -1,0 +1,16 @@
+<div>
+  <div>action button</div>
+  <input id="clickedBtn" type="button" value="click me"/>
+  <div id="showDiv">clicked: 0</div>
+</div>
+
+<script>
+  let counter = 0
+  const btn = document.getElementById('clickedBtn')
+  const show = document.getElementById('showDiv')
+  
+  btn.addEventListener('click', ()=>{
+    counter++
+    show.innerHtml = 'clicked: ' + counter
+  })
+</script>
